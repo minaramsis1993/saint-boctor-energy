@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
+  // Static single-page site: the app manifest isn't needed and causes a noisy "#app-manifest" dev error.
+  experimental: { appManifest: false },
   css: ['@fontsource-variable/outfit', '@fontsource-variable/inter', '~/assets/css/main.css'],
   nitro: { prerender: { routes: ['/'] } },
   runtimeConfig: {
