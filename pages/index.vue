@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const config = useRuntimeConfig()
 const url = config.public.siteUrl
-const title = 'Electrician Moorebank | Switchboards, EV Chargers & Batteries | Saint Boctor Energy'
-const description = 'Saint Boctor Energy: 5-star rated Moorebank electricians for switchboard upgrades, EV charger and home battery installation. Free quotes across South-West Sydney. Call 0470 401 903.'
+const title = 'Solar & Battery Installation Moorebank | Saint Boctor Energy'
+const description = 'Saint Boctor Energy: 5-star rated Moorebank solar panel and home battery installers. Quotes across South-West Sydney. Call 0470 401 903.'
 
 useSeoMeta({
   title,

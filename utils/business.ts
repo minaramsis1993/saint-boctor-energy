@@ -14,10 +14,10 @@ export const business = {
 }
 
 export const services = [
-  { icon: '⚡', title: 'Switchboard Upgrades', text: 'Replace outdated ceramic fuse boards with modern, safe switchboards with RCD protection, ready for solar, batteries and EV chargers.' },
-  { icon: '🚗', title: 'EV Charger Installation', text: 'Home and business EV charger installs, neatly cabled and tested, with load assessment so your supply copes.' },
-  { icon: '🔋', title: 'Home Battery Installation', text: 'Professional battery installs that store your solar and cut your power bills, done cleanly and to standard.' },
-  { icon: '🛡️', title: 'Security & Maintenance', text: 'Security system wiring and general electrical maintenance for homes and businesses across Sydney.' }
+  { icon: '☀️', title: 'Solar Panel Installation', text: 'Rooftop solar designed around your roof and your usage, installed neatly and tested, so you generate your own power and cut your bills.' },
+  { icon: '🔋', title: 'Home Battery Installation', text: 'Store your excess solar for the evening and overnight instead of selling it back cheap. Clean installs of leading battery brands.' },
+  { icon: '🔆', title: 'Solar + Battery Packages', text: 'Panels, hybrid inverter and battery installed together as one system, designed to work as a complete unit from day one.' },
+  { icon: '🔧', title: 'Battery Add-on for Existing Solar', text: 'Already have solar? We can add a battery to your existing system and upgrade the inverter if needed.' }
 ]
 
 export const reviews = [
@@ -31,7 +31,9 @@ export const areas = ['Moorebank', 'Liverpool', 'Chipping Norton', 'Casula', 'Ho
 export const faqs = [
   { q: 'Do you offer free quotes?', a: 'Yes. Call us or send the quote form and we will come back to you quickly with a clear, upfront price.' },
   { q: 'Which areas do you service?', a: 'We are based in Moorebank and service Liverpool, Chipping Norton, Casula, Holsworthy and the wider South-West Sydney region.' },
-  { q: 'Do I need a switchboard upgrade before installing a battery or EV charger?', a: 'Often yes. Older switchboards may not safely handle the extra load. We assess your board on site and tell you honestly what is needed.' },
+  { q: 'Can I add a battery to my existing solar system?', a: 'In most cases yes. We check your inverter, switchboard and meter set-up on site and tell you honestly what is needed, including whether the inverter needs upgrading.' },
+  { q: 'Is a solar and battery system worth it?', a: 'It depends on how much power you use and when. We size the system around your bills and your daily usage, and explain the numbers before you commit.' },
+  { q: 'Are there government rebates for solar and batteries?', a: 'Federal and state incentives for solar and home batteries may apply, and they change over time. We will check what you are eligible for and include it in your quote.' },
   { q: 'Are you licensed and insured?', a: 'Yes. All work is carried out by licensed electricians and complies with Australian Standards.' },
-  { q: 'How long does a switchboard upgrade take?', a: 'Most residential switchboard upgrades are completed in a single day, with power off for only part of it.' }
+  { q: 'How long does an installation take?', a: 'Most home solar or battery installations are completed in a day or two, depending on system size. We will confirm the timeline when we quote.' }
 ]

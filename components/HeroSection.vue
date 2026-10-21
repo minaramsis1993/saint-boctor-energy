@@ -11,9 +11,9 @@ const heroStyle = heroUrl ? { '--hero-img': `url(${heroUrl})` } : {}
     <span class="spark s2" aria-hidden="true">⚡</span>
     <span class="spark s3" aria-hidden="true">⚡</span>
     <div class="container hero-inner">
-      <h1 class="in" style="--i: 1">Electrical Installation in Moorebank &amp; South-West Sydney</h1>
+      <h1 class="in" style="--i: 1">Solar &amp; Battery Installation in Moorebank &amp; South-West Sydney</h1>
       <p class="lead in" style="--i: 2">
-        Switchboard upgrades, EV chargers, home batteries and security systems, installed by licensed
+        Cut your power bills with rooftop solar and home battery storage, installed by licensed
         electricians at a fair, upfront price.
       </p>
       <div class="hero-actions in" style="--i: 3">

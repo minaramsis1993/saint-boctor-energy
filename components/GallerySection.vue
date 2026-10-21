@@ -6,11 +6,11 @@ const files = import.meta.glob('../assets/images/gallery/*.{jpg,jpeg,png,webp,av
 const captions: Record<string, { title: string, tag: string }> = {
   'foxess-inverter-battery': { title: 'FoxESS inverter & battery', tag: 'Battery' },
   'sigenergy-battery': { title: 'Sigenergy home battery', tag: 'Battery' },
-  'garage-ev-charger-battery': { title: 'EV charger, inverter & battery in the garage', tag: 'EV charger' },
+  'garage-ev-charger-battery': { title: 'Garage battery & inverter installation', tag: 'Battery' },
   'battery-inverter-install': { title: 'Battery & inverter installation', tag: 'Battery' },
   'rooftop-solar': { title: 'Rooftop solar panels', tag: 'Solar' },
   'battery-storage': { title: 'Home battery storage', tag: 'Battery' },
-  'switchboard-metering': { title: 'Switchboard & metering upgrade', tag: 'Switchboard' }
+  'switchboard-metering': { title: 'Solar metering & protection board', tag: 'Solar' }
 }
 
 const photos = Object.entries(files)

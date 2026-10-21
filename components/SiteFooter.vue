@@ -3,7 +3,7 @@
     <div class="container footer-inner">
       <div>
         <strong>{{ business.name }}</strong>
-        <p>Electrical installation &amp; maintenance: switchboards, EV chargers, batteries and security systems.</p>
+        <p>Solar panel and home battery installation across Moorebank and South-West Sydney.</p>
         <p class="small">{{ business.licence }}</p>
       </div>
       <div>

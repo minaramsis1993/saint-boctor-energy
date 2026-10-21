@@ -3,7 +3,7 @@ const items = [
   { title: 'Best price, no surprises', text: 'Customers tell us our pricing beats the market. You get a clear quote before any work starts.' },
   { title: 'High-quality installation', text: 'Neat, safe, compliant workmanship that is tested and explained at handover.' },
   { title: 'Professional service', text: 'Friendly, punctual and respectful of your home. We keep you informed throughout.' },
-  { title: 'Future-ready upgrades', text: 'We plan your switchboard and wiring for solar, batteries and EV charging, so you only pay once.' }
+  { title: 'Sized to your needs', text: 'We design your solar and battery system around your usage and your roof, so you do not overpay for capacity you will not use.' }
 ]
 </script>
 
