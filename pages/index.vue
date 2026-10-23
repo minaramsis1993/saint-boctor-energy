@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const config = useRuntimeConfig()
 const url = config.public.siteUrl
-const title = 'Solar & Battery Installation Moorebank | Saint Boctor Energy'
-const description = 'Saint Boctor Energy: 5-star rated Moorebank solar panel and home battery installers. Quotes across South-West Sydney. Call 0470 401 903.'
+const title = 'Solar & Battery Installation Sydney | Saint Boctor Energy'
+const description = 'Saint Boctor Energy: 5-star rated Sydney solar panel and home battery installers. Quotes across Greater Sydney. Call 0470 401 903.'
 
 useSeoMeta({
   title,

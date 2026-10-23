@@ -1,6 +1,6 @@
 # Saint Boctor Energy: Website
 
-Landing page for **Saint Boctor Energy**, solar panel and home battery installation in Moorebank and South-West Sydney, NSW.
+Landing page for **Saint Boctor Energy**, solar panel and home battery installation across Sydney, NSW (based in Moorebank).
 
 Built with **Nuxt 3 (Vue 3)** and pre-rendered to static HTML so search engines receive the full content.
 

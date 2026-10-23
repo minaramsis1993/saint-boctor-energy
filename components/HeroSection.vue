@@ -11,7 +11,7 @@ const heroStyle = heroUrl ? { '--hero-img': `url(${heroUrl})` } : {}
     <span class="spark s2" aria-hidden="true">⚡</span>
     <span class="spark s3" aria-hidden="true">⚡</span>
     <div class="container hero-inner">
-      <h1 class="in" style="--i: 1">Solar &amp; Battery Installation in Moorebank &amp; South-West Sydney</h1>
+      <h1 class="in" style="--i: 1">Solar &amp; Battery Installation Across Sydney</h1>
       <p class="lead in" style="--i: 2">
         Cut your power bills with rooftop solar and home battery storage, installed by licensed
         electricians at a fair, upfront price.
@@ -23,7 +23,7 @@ const heroStyle = heroUrl ? { '--hero-img': `url(${heroUrl})` } : {}
       <ul class="trust in" style="--i: 4">
         <li><span class="ck" aria-hidden="true">✓</span>Licensed &amp; insured</li>
         <li><span class="ck" aria-hidden="true">✓</span>Upfront pricing</li>
-        <li><span class="ck" aria-hidden="true">✓</span>Locally owned in Moorebank</li>
+        <li><span class="ck" aria-hidden="true">✓</span>Sydney-based &amp; owned</li>
       </ul>
     </div>
   </section>

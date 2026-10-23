@@ -10,15 +10,19 @@ const captions: Record<string, { title: string, tag: string }> = {
   'battery-inverter-install': { title: 'Battery & inverter installation', tag: 'Battery' },
   'rooftop-solar': { title: 'Rooftop solar panels', tag: 'Solar' },
   'battery-storage': { title: 'Home battery storage', tag: 'Battery' },
-  'switchboard-metering': { title: 'Solar metering & protection board', tag: 'Solar' }
+  'switchboard-metering': { title: 'Solar metering & protection board', tag: 'Solar' },
+  'fronius-inverter-battery': { title: 'Fronius inverter with home battery', tag: 'Solar + battery' },
+  'solax-inverter-battery': { title: 'SolaX inverter & home battery', tag: 'Solar + battery' },
+  'battery-bollards': { title: 'Home battery with protective bollards', tag: 'Battery' },
+  'battery-outdoor-canopy': { title: 'Outdoor battery & inverter with weather canopy', tag: 'Battery' }
 }
 
 const photos = Object.entries(files)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([path, url], n) => {
     const key = path.split('/').pop()!.replace(/\.\w+$/, '').replace(/^\d+-/, '')
-    const cap = captions[key] ?? { title: 'Electrical installation', tag: 'Installation' }
-    return { url, title: cap.title, tag: cap.tag, alt: `${cap.title} by Saint Boctor Energy, Moorebank NSW (photo ${n + 1})` }
+    const cap = captions[key] ?? { title: 'Home battery & inverter installation', tag: 'Battery' }
+    return { url, title: cap.title, tag: cap.tag, alt: `${cap.title} by Saint Boctor Energy, Sydney NSW (photo ${n + 1})` }
   })
 
 const track = ref<HTMLElement>()
@@ -70,7 +74,7 @@ onBeforeUnmount(() => {
   <section v-if="photos.length" id="gallery" class="section section-alt">
     <div class="container">
       <h2 v-reveal>Our Recent Work</h2>
-      <p v-reveal="80" class="sub">Real installs by Saint Boctor Energy across Moorebank and South-West Sydney.</p>
+      <p v-reveal="80" class="sub">Real installs by Saint Boctor Energy across Sydney.</p>
 
       <div
         v-reveal="120"

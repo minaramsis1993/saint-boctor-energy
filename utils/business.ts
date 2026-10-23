@@ -26,11 +26,11 @@ export const reviews = [
   { name: 'D', text: "Very happy with Michael's work installing the battery." }
 ]
 
-export const areas = ['Moorebank', 'Liverpool', 'Chipping Norton', 'Casula', 'Holsworthy', 'Hammondville', 'Wattle Grove', 'Georges Hall', 'Bankstown', 'Campbelltown', 'Hoxton Park', 'South-West Sydney']
+export const areas = ['Sydney CBD', 'Inner West', 'Eastern Suburbs', 'North Shore', 'Northern Beaches', 'Parramatta', 'Western Sydney', 'The Hills District', 'Blacktown', 'South-West Sydney', 'Liverpool', 'Campbelltown', 'Sutherland Shire', 'St George', 'Canterbury-Bankstown', 'Moorebank']
 
 export const faqs = [
   { q: 'Do you offer free quotes?', a: 'Yes. Call us or send the quote form and we will come back to you quickly with a clear, upfront price.' },
-  { q: 'Which areas do you service?', a: 'We are based in Moorebank and service Liverpool, Chipping Norton, Casula, Holsworthy and the wider South-West Sydney region.' },
+  { q: 'Which areas do you service?', a: 'We are based in Sydney and install solar and batteries across the Greater Sydney area. Get in touch with your suburb and we will confirm we can help.' },
   { q: 'Can I add a battery to my existing solar system?', a: 'In most cases yes. We check your inverter, switchboard and meter set-up on site and tell you honestly what is needed, including whether the inverter needs upgrading.' },
   { q: 'Is a solar and battery system worth it?', a: 'It depends on how much power you use and when. We size the system around your bills and your daily usage, and explain the numbers before you commit.' },
   { q: 'Are there government rebates for solar and batteries?', a: 'Federal and state incentives for solar and home batteries may apply, and they change over time. We will check what you are eligible for and include it in your quote.' },
