@@ -5,7 +5,12 @@ export default defineNuxtConfig({
   css: ['@fontsource-variable/outfit', '@fontsource-variable/inter', '~/assets/css/main.css'],
   nitro: { prerender: { routes: ['/'] } },
   runtimeConfig: {
+    // Private (server-only). Set via NUXT_GOOGLE_PLACES_API_KEY, NUXT_GOOGLE_PLACE_ID, NUXT_FACEBOOK_PAGE_TOKEN.
+    googlePlacesApiKey: '',
+    googlePlaceId: '',
+    facebookPageToken: '',
     public: {
+      facebookPageId: '61577632705284',
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.saintboctorenergy.com.au',
       // Web3Forms access keys are designed to be public (they only route to the owner's inbox).
       web3formsKey: process.env.NUXT_PUBLIC_WEB3FORMS_KEY || '3a326010-e02c-4fed-ba5a-f9a9b3ed8c6e'

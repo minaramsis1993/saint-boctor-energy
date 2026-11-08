@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const config = useRuntimeConfig()
 const url = config.public.siteUrl
+const { data: live } = await useReviews()
 const title = 'Solar & Battery Installation Sydney | Saint Boctor Energy'
 const description = 'Saint Boctor Energy: 5-star rated Sydney solar panel and home battery installers. Quotes across Greater Sydney. Call 0470 401 903.'
 
@@ -35,9 +36,10 @@ useHead({
           postalCode: business.postcode,
           addressCountry: 'AU'
         },
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: business.rating, reviewCount: business.reviewCount },
+        aggregateRating: { '@type': 'AggregateRating', ratingValue: live.value?.rating ?? business.rating, reviewCount: live.value?.count ?? business.reviewCount },
         areaServed: areas.map(a => ({ '@type': 'Place', name: a })),
         makesOffer: services.map(s => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.title } })),
+        sameAs: [business.facebookUrl],
         hasMap: business.mapsUrl
       })
     },

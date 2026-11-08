@@ -42,6 +42,18 @@ Environment variables (all optional):
 | `NUXT_PUBLIC_SITE_URL` | Canonical/OG URL | `https://www.saintboctorenergy.com.au` |
 | `NUXT_PUBLIC_WEB3FORMS_KEY` | Web3Forms access key for the quote form | key set in `nuxt.config.ts` |
 
+### Live reviews (Google + Facebook)
+
+`server/api/reviews.get.ts` fetches reviews at build time (`npm run generate`) or request time (SSR). Without credentials the page shows the static reviews in `utils/business.ts`.
+
+| Variable | Purpose |
+|---|---|
+| `NUXT_GOOGLE_PLACES_API_KEY` | Google Cloud key with Places API (New) enabled |
+| `NUXT_GOOGLE_PLACE_ID` | Place ID of the Google Business Profile |
+| `NUXT_FACEBOOK_PAGE_TOKEN` | Page access token (needs `pages_read_user_content`) |
+
+Google returns at most 5 reviews. On a static host, reviews refresh on each rebuild, so set up a scheduled rebuild (e.g. a daily deploy hook).
+
 Web3Forms access keys are designed to be public; they only route submissions to the owner's inbox.
 
 ## Editing content

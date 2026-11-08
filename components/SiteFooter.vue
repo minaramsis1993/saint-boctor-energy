@@ -9,6 +9,7 @@
       <div>
         <p>{{ business.street }}<br>{{ business.suburb }} {{ business.state }} {{ business.postcode }}</p>
         <p><a :href="`tel:${business.phone.replace(/\s/g, '')}`">{{ business.phone }}</a></p>
+        <p><a :href="business.facebookUrl" target="_blank" rel="noopener">Follow us on Facebook</a></p>
       </div>
     </div>
     <p class="container small copy">© {{ new Date().getFullYear() }} {{ business.name }}. All rights reserved.</p>

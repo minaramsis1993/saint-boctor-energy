@@ -10,6 +10,7 @@ export const business = {
   licence: 'Licence No. [TO BE ADDED]', // TODO: add NSW electrical licence number
   rating: 5.0,
   reviewCount: 12,
+  facebookUrl: 'https://www.facebook.com/p/Saint-Boctor-Energy-61577632705284/',
   mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Saint+Boctor+Energy+58+Hoy+St+Moorebank+NSW+2170'
 }
 
