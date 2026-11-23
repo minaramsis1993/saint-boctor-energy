@@ -42,4 +42,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./.output/public/
-          server-dir: /public_html/
+          # The FTP account's home directory is public_html, so its root is "/"
+          server-dir: /
