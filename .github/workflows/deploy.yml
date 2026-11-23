@@ -1,0 +1,45 @@
+name: Build and deploy to VentraIP
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Rebuild daily (05:00 UTC) so new Facebook reviews are picked up
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      # Reviews are fetched here at build time and baked into the static pages.
+      - name: Generate static site
+        run: npm run generate
+        env:
+          NUXT_FACEBOOK_PAGE_TOKEN: ${{ secrets.NUXT_FACEBOOK_PAGE_TOKEN }}
+          # Optional: add these two secrets later to enable live Google reviews
+          NUXT_GOOGLE_PLACES_API_KEY: ${{ secrets.NUXT_GOOGLE_PLACES_API_KEY }}
+          NUXT_GOOGLE_PLACE_ID: ${{ secrets.NUXT_GOOGLE_PLACE_ID }}
+
+      - name: Upload to VentraIP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./.output/public/
+          server-dir: /public_html/
